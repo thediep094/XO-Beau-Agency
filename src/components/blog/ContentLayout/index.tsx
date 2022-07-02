@@ -101,6 +101,7 @@ const ContentLayout: React.FC<IContentLayout> = (props) => {
       </div>
     );
   }
+  return null;
 };
 
 export default ContentLayout;
