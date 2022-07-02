@@ -1,0 +1,141 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: -88px;
+    min-height: 88px;
+    transition: top 0.6s;
+    background: linear-gradient(136.75deg, #020364 54.48%, #1149F2 195.62%);
+    border-bottom: 1px solid rgba(214, 221, 255, .12);
+    z-index: 999;
+}
+
+.stickyClass {
+    top: 0px;
+}
+
+.fluid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 37px;
+    padding-right: 31.5px;
+    z-index: 999;
+}
+
+.collapse {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    min-height: 88px;
+    align-items: center;
+}
+
+.navItem {
+    font-weight: 600;
+    padding: 0 !important;
+    color: rgba(214, 221, 255, .44);
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.active {
+    color: rgba(214, 221, 255, .8);
+    margin: 0;
+}
+
+.navbarNav {
+    margin-right: 38.5px;
+}
+
+.button {
+    color: #13157F;
+    background-color: #65FFCC;
+    padding: 12px 30px 14px;
+    border-radius: 24px;
+    font-weight: 700;
+    line-height: 22px;
+    border: none;
+}
+
+.bars {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: none;
+}
+
+.menuNav {
+    display: none;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(136.75deg, #020364 54.48%, #1149F2 195.62%);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.menuContainer {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    margin-top: 54px;
+    padding: 0 23px;
+    transition: 0.5s;
+}
+
+.menuCollapseItem {}
+
+.menuNavItem {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.94);
+    margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 992px) {
+    .collapse {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .menuNav {
+        display: block;
+    }
+
+    .active {
+        color: rgba(101, 255, 204, 0.9);
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .showMenu {
+        top: 0px;
+    }
+
+    .showMenuNavBar {
+        padding-top: 88px;
+        height: 100%;
+    }
+
+    .showItemNavBar {
+        display: block;
+    }
+}

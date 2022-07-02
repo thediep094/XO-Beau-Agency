@@ -1,0 +1,22 @@
+.button {
+  width: 185px;
+  height: 56px;
+  background: #65ffcc;
+  border-radius: 30px;
+  /* font-family: 'Manrope'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #13157f;
+  border: none;
+  z-index: 99;
+}
+@media screen and (max-width: 756px) {
+  .button {
+    width: 146px !important;
+    height: 42px !important;
+    font-size: 16px;
+  }
+}

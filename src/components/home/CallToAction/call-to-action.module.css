@@ -1,0 +1,185 @@
+.home {
+  width: 100%;
+  height: 830px;
+  position: relative;
+}
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  background-image: url('/images/CallToActionImg1.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.wrapper {
+  z-index: 3;
+  position: absolute;
+  top: 160px;
+}
+
+.title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(214, 221, 255, 0.4);
+  mix-blend-mode: normal;
+  margin-bottom: 20px;
+}
+
+.des {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 67px;
+  /* or 124% */
+  max-width: 648px;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.span {
+  color: #65ffcc;
+  font-family: 'Source Serif Pro';
+  font-size: 62px;
+}
+.overlay {
+  z-index: 2;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #020364 0%,
+    #020364 26.42%,
+    rgba(2, 3, 100, 0.6) 47.98%,
+    rgba(2, 3, 100, 0) 68.24%
+  );
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.svg {
+  z-index: 3;
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  right: 0;
+}
+.svgMobile {
+  display: none;
+}
+.checkBot {
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.svgHidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  .wrapper {
+    top: 82px;
+    z-index: 3;
+    position: absolute;
+  }
+  .title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #d6ddff;
+    margin-bottom: 10px;
+    opacity: 0.4;
+    mix-blend-mode: normal;
+    margin-bottom: 20px;
+  }
+  .des {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 38px;
+    /* or 141% */
+
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .span {
+    font-size: 32px;
+    color: #65ffcc;
+    font-family: 'Source Serif Pro';
+  }
+  .overlay {
+    z-index: 2;
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      #020364 0%,
+      #020364 43.42%,
+      rgba(2, 3, 100, 0.6) 49.98%,
+      rgba(2, 3, 100, 0) 66.24%
+    ) !important;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .img {
+    background-image: url('/images/CallToActionImg2.png');
+    height: 60%;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .svg {
+    display: none;
+    z-index: 3;
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+  }
+  .svgMobile {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .svgHidden {
+    display: none !important;
+  }
+
+  .checkBot {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+  }
+}
