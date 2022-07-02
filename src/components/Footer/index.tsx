@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from 'public/assets/logo.png';
 import buttonScroll from 'public/assets/go-to-top.png';
-import facebook from 'public/assets/Facebook.svg';
-import twitter from 'public/assets/Twitter.svg';
+import facebook from 'public/assets/facebook.svg';
+import twitter from 'public/assets/twitter.svg';
 import styles from './footer.module.scss';
 
 const index = () => {
