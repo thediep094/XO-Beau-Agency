@@ -69,7 +69,10 @@ const index = () => {
                   </Link>
                 </li>
                 <li>
-                  Email: <a className={styles.footerLink} href="mailto: hi@xopify.com">hi@xopify.com</a>
+                  Email:{' '}
+                  <a className={styles.footerLink} href="mailto: hi@xopify.com">
+                    hi@xopify.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -80,9 +83,7 @@ const index = () => {
         </div>
       </div>
       <div className={styles.footerInfo}>
-        <span className={styles.textInfo}>
-          Xopify &copy; 2022. All rights resserved.
-        </span>
+        <span className={styles.textInfo}>Xopify &copy; 2022. All rights resserved.</span>
         <div className={styles.textCenter}>
           <Link href="#">
             <span className={styles.textInfo}>Document</span>
